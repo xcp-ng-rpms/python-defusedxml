@@ -11,7 +11,7 @@
 %global         with_python2 1
 %endif
 
-%if %python3_pkgversion != 34
+%if %defined python3_pkgversion && %{python3_pkgversion} != 34
 %global         with_python3 1
 %else
 %global         with_python3 0
